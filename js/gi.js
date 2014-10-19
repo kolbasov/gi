@@ -21,11 +21,6 @@ function change(url) {
       var template = '<img src="' + src + 'media/?size=';
       var ending = '"/>';
       result.append(template + 'l' + ending);
-      //result.append(template + 'm' + ending);
-      //result.append(template + 't' + ending);
-      $('img').on('click', function() {
-         window.open($(this).attr('src'));
-      });
    } else {
       result.append('<div class="error">o_O</div>');
    }
